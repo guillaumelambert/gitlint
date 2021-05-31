@@ -4,3 +4,10 @@
     entry: gitlint
     args: [--staged, --msg-filename]
     stages: [commit-msg]
+-   id: gitlint0
+    name: gitlint
+    language: python
+    entry: gitlint
+    args: [lint]
+    pass_filenames: false
+    stages: [commit]
